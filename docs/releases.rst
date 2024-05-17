@@ -2,6 +2,11 @@
 Release Notes
 =============
 
+Unreleased
+==========
+
+* Support Wagtail 6.1
+
 2.4.0
 =====
 
