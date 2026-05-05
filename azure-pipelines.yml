@@ -30,23 +30,20 @@ stages:
       vmImage: 'ubuntu-latest'
     strategy:
       matrix:
-        py3.8_wag3:
-          PYTHON_VERSION: '3.8'
-          WAGTAIL: '3.*'
-        py3.9_wag4:
-          PYTHON_VERSION: '3.9'
-          WAGTAIL: '4.*'
-        py3.10_wag5:
+        py3.10_wag7:
           PYTHON_VERSION: '3.10'
-          WAGTAIL: '5.*'
-        py3.11_wag5:
+          WAGTAIL: '7.*'
+        py3.11_wag7:
           PYTHON_VERSION: '3.11'
-          WAGTAIL: '5.*'
-        py3.12_wag6:
+          WAGTAIL: '7.*'
+        py3.12_wag7:
           PYTHON_VERSION: "3.12"
-          WAGTAIL: '6.*'
+          WAGTAIL: '7.*'
         py3.13_wag7:
           PYTHON_VERSION: "3.13"
+          WAGTAIL: '7.*'
+        py3.14_wag7:
+          PYTHON_VERSION: "3.14"
           WAGTAIL: '7.*'
 
     steps:

@@ -2,8 +2,6 @@
 Default django settings for wagtail-cache.
 """
 
-from typing import Text
-
 from django.conf import settings
 
 
@@ -36,7 +34,7 @@ class _DefaultSettings:
     ]
     WAGTAIL_CACHE_KEYRING = False
 
-    def __getattribute__(self, attr: Text):
+    def __getattribute__(self, attr: str):
         # First load from Django settings.
         # If it does not exist, load from _DefaultSettings.
         try:
